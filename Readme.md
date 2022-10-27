@@ -1,34 +1,20 @@
----
-title: Template
-author: Zuletzt bearbeitet von Alexander Bazo
-documentclass: scrartcl
-classoption:
-  - a4paper
-header-includes: |
-    \usepackage{german} 
-    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
-    \usepackage{fancyhdr}
-    \usepackage{graphicx}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \rhead{OOP WS 2020/21}
-    \lhead{U00 | Template}
-    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \rhead{OOP WS 2020/21}
-      \lhead{U00 | Template}
-      \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
----
+# U07 | Hello Graphics App
+
+In dieser Aufgabe können Sie erste Erfahrungen mit der GraphicsApp sammeln. Zeichnen Sie einen überraschten Smiley, wie in der folgenden Abbildung dargestellt.
+
+| Dieses Bild soll gezeichnet werden. |
+|:------:|
+| ![Hello GraphicsApp](./docs/u03-hello-graphicsApp.png) |
 
 
-# Template für Übungsaufgaben 
+- Ihr Programm startet in der Methode `public void initalize()`. Das Zeichnen des Gesichts soll in der Methode `draw` druchgeführt werden.
 
-## Wichtige Informationen zur Bearbeitung der Aufgabe 
- - [Link zu wichtiger Ressource](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/)
+- Zerlegen Sie das Problem in Teilprobleme und erstellen zuerst die Aufrufe für die Methoden `setupCanvas()` und `drawSmiley()` in den vorhandenen Methoden `initalize()` und `draw()`.
 
-## Starterpaket
+- Fügen Sie dann die Methoden in der Graphics-App hinzu und setzen Sie in `setupCanvas()` dort die Hintergrundfarbe und die Breite und Höhe der Zeichenflächeauf 500 Pixel.
 
-Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe finden Sie [hier](https://github.com/OOP-Ubungen-WS2020-21/U00-Template-fuer-Aufgaben/archive/Starterpaket.zip).
+- Der Smiley muss zentriert auf der Zeichenfläche dargestellt werden, unabhängig von der Größe des Zeichenfelds! Verwenden Sie geeignete Konstanten (vgl. Beispielcode aus der Vorlesung), um die Breite und Höhe an einer einzigen Stelle in Ihrem Programm zu definieren. Alle anderen Stellen, an denen diese Werte gebraucht werden müssen sich auf diese zentrale Stelle beziehen!
 
-## Text
+- Die Größe des Smileys können Sie frei wählen.
+
+- Nutzen Sie zum Zeichnen des Smiley bzw. den einzelnen Teilen des Gesichts Ellipsen mit unterschiedlicher Größe, Farbe und Position.
